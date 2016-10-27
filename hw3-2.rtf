@@ -1,0 +1,24 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red53\green53\blue53;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab560
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 problem 2\
+    #    tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      -               \
+#tcp        0      0 0.0.0.0:6506            0.0.0.0:*               LISTEN      3054/python3    \
+#tcp        0      0 0.0.0.0:6507            0.0.0.0:*               LISTEN      3054/python3    \
+#tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN     \
+#after\
+#tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      -               \
+#tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      -               \
+#tcp        0      0 127.0.0.1:6507          127.0.0.1:33312         TIME_WAIT   -               \
+#tcp        0      0 127.0.0.1:53448         127.0.0.1:6506          TIME_WAIT   -               \
+#tcp        0      0 104.131.18.3:22         4.28.35.230:31931       ESTABLISHED -               \
+#tcp        0      0 104.131.18.3:22         4.28.35.230:63630       ESTABLISHED -               \
+#tcp        0      0 104.131.18.3:22         4.28.35.230:2112        ESTABLISHED -               \
+#tcp        0      0 104.131.18.3:22         4.28.35.230:17110       ESTABLISHED -               \
+#tcp        0    604 104.131.18.3:22         4.28.35.230:2736        ESTABLISHED -               \
+#tcp6       0      0 ::1:25                  :::*                    LISTEN      -               \
+#tcp6       0      0 :::22                   :::*                    LISTEN      -    }
